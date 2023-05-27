@@ -1,3 +1,5 @@
+import { Avatar } from './Avatar'
+
 import styles from './Sidebar.module.css'
 import { PencilLine } from 'phosphor-react'
 import coverImg from '../assets/images/cover-image.jpg'
@@ -9,7 +11,7 @@ export function Sidebar() {
       <img className={styles.cover} src={coverImg} alt="Logo" />
 
       <div className={styles.profile}>
-        <img className={styles.avatar} src={profileImg} alt='LOGO' />
+        <Avatar src={profileImg}/>
         <strong>Bruno Silva</strong>
         <span>12 league points</span>
       </div>

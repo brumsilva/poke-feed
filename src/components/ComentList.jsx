@@ -3,13 +3,14 @@ import styles from './ComentList.module.css'
 import imgProfile from '../assets/images/perfil-img.jpg'
 import { Trash } from 'phosphor-react'
 import { HandsClapping } from 'phosphor-react'
+import { Avatar } from './Avatar'
 
 export function ComentList() {
 
   return (
     <div className={styles.comentList}>
       <div className={styles.author}>
-        <img src={imgProfile} className={styles.avatar} alt='avatar' />
+        <Avatar hasBorder={false} src={imgProfile}/>
       </div>
       <div className={styles.comentBox}>
       <div className={styles.comentContent}>
