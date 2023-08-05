@@ -1,6 +1,7 @@
 import styles from './Coments.module.css'
 
 export function Coments() {
+  const coments = useState();
   return (
     <form className={styles.form}>
       <strong>Comentários</strong>
